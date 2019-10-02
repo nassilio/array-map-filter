@@ -29,6 +29,11 @@ Sortie attendue:
  */
 
 function filterOnPrice(products, maxPrice) {
+  return products.filter (compar => {
+    if (compar.price <= maxPrice) {
+      return compar;
+    }
+  })
 }
 
 // Ne pas modifier l'export
